@@ -1,0 +1,200 @@
+mysql> SOURCE db/queries.sql
++---------------+---------------+-----------+
+| location_name | vehicle_count | avg_speed |
++---------------+---------------+-----------+
+| Junction_A    |            32 |     50.22 |
+| Junction_A    |            49 |     37.07 |
+| Junction_A    |            43 |     48.19 |
+| Junction_A    |            62 |     29.02 |
+| Junction_A    |            29 |     75.19 |
+| Junction_A    |            11 |     40.22 |
+| Junction_A    |            56 |     32.24 |
+| Junction_A    |            57 |     70.45 |
+| Junction_A    |            15 |     31.68 |
+| Junction_A    |           103 |     36.43 |
++---------------+---------------+-----------+
+10 rows in set (0.00 sec)
+
++---------------+-------------+
+| location_name | avg_traffic |
++---------------+-------------+
+| Junction_C    |     53.5350 |
+| Junction_A    |     52.7994 |
+| Junction_D    |     52.7342 |
+| Junction_B    |     52.1757 |
++---------------+-------------+
+4 rows in set (0.01 sec)
+
++---------------+------------------+
+| location_name | congestion_count |
++---------------+------------------+
+| Junction_A    |              364 |
+| Junction_B    |              364 |
+| Junction_C    |              357 |
+| Junction_D    |              355 |
++---------------+------------------+
+4 rows in set (0.01 sec)
+
++------+-------------+
+| hour | avg_traffic |
++------+-------------+
+|    0 |     34.2284 |
+|    1 |     34.3365 |
+|    2 |     35.9840 |
+|    3 |     36.7680 |
+|    4 |     35.7241 |
+|    5 |     34.9592 |
+|    6 |     35.8889 |
+|    7 |     34.9528 |
+|    8 |     88.8125 |
+|    9 |     90.3897 |
+|   10 |     92.0909 |
+|   11 |     89.2591 |
+|   12 |     35.5784 |
+|   13 |     34.2806 |
+|   14 |     35.0173 |
+|   15 |     35.1073 |
+|   16 |     34.2593 |
+|   17 |     90.1786 |
+|   18 |     89.0576 |
+|   19 |     89.3487 |
+|   20 |     89.7268 |
+|   21 |     36.2857 |
+|   22 |     35.5991 |
+|   23 |     33.4464 |
++------+-------------+
+24 rows in set (0.00 sec)
+
++---------------+------+-------------+
+| location_name | hour | avg_traffic |
++---------------+------+-------------+
+| Junction_A    |    0 |     35.8276 |
+| Junction_D    |    0 |     36.6275 |
+| Junction_C    |    0 |     31.6200 |
+| Junction_B    |    0 |     33.0685 |
+| Junction_D    |    1 |     38.6346 |
+| Junction_C    |    1 |     33.6786 |
+| Junction_A    |    1 |     34.1458 |
+| Junction_B    |    1 |     31.1091 |
+| Junction_A    |    2 |     37.7955 |
+| Junction_D    |    2 |     34.4250 |
+| Junction_C    |    2 |     35.3333 |
+| Junction_B    |    2 |     36.4773 |
+| Junction_D    |    3 |     37.5000 |
+| Junction_C    |    3 |     36.2083 |
+| Junction_A    |    3 |     37.3265 |
+| Junction_B    |    3 |     35.9111 |
+| Junction_C    |    4 |     33.8333 |
+| Junction_D    |    4 |     36.6190 |
+| Junction_B    |    4 |     38.0980 |
+| Junction_A    |    4 |     34.6207 |
+| Junction_C    |    5 |     39.4634 |
+| Junction_A    |    5 |     33.8810 |
+| Junction_D    |    5 |     32.3654 |
+| Junction_B    |    5 |     34.8852 |
+| Junction_B    |    6 |     36.4839 |
+| Junction_D    |    6 |     35.2712 |
+| Junction_C    |    6 |     36.4590 |
+| Junction_A    |    6 |     35.2115 |
+| Junction_A    |    7 |     36.4615 |
+| Junction_C    |    7 |     35.8222 |
+| Junction_D    |    7 |     31.1270 |
+| Junction_B    |    7 |     37.6154 |
+| Junction_B    |    8 |     89.3673 |
+| Junction_A    |    8 |     86.2195 |
+| Junction_D    |    8 |     89.9107 |
+| Junction_C    |    8 |     89.0968 |
+| Junction_C    |    9 |     90.6379 |
+| Junction_B    |    9 |     89.2692 |
+| Junction_A    |    9 |     93.7593 |
+| Junction_D    |    9 |     87.5714 |
+| Junction_A    |   10 |     92.7174 |
+| Junction_C    |   10 |     95.8889 |
+| Junction_B    |   10 |     89.8378 |
+| Junction_D    |   10 |     90.1186 |
+| Junction_D    |   11 |     91.4468 |
+| Junction_A    |   11 |     86.3971 |
+| Junction_C    |   11 |     93.7273 |
+| Junction_B    |   11 |     87.5410 |
+| Junction_C    |   12 |     37.8043 |
+| Junction_A    |   12 |     35.9483 |
+| Junction_B    |   12 |     35.1000 |
+| Junction_D    |   12 |     33.5800 |
+| Junction_B    |   13 |     34.4667 |
+| Junction_A    |   13 |     33.7778 |
+| Junction_C    |   13 |     34.7234 |
+| Junction_D    |   13 |     34.0682 |
+| Junction_C    |   14 |     37.0149 |
+| Junction_B    |   14 |     32.9636 |
+| Junction_D    |   14 |     36.8400 |
+| Junction_A    |   14 |     33.1186 |
+| Junction_A    |   15 |     37.0500 |
+| Junction_C    |   15 |     36.0741 |
+| Junction_B    |   15 |     32.7619 |
+| Junction_D    |   15 |     33.6735 |
+| Junction_A    |   16 |     33.4444 |
+| Junction_C    |   16 |     35.0000 |
+| Junction_B    |   16 |     33.4773 |
+| Junction_D    |   16 |     34.9302 |
+| Junction_D    |   17 |     89.7021 |
+| Junction_A    |   17 |     88.2364 |
+| Junction_C    |   17 |     90.0800 |
+| Junction_B    |   17 |     93.2273 |
+| Junction_C    |   18 |     86.6429 |
+| Junction_D    |   18 |     87.8776 |
+| Junction_B    |   18 |     93.1905 |
+| Junction_A    |   18 |     88.8103 |
+| Junction_C    |   19 |     87.8478 |
+| Junction_D    |   19 |     86.9483 |
+| Junction_A    |   19 |     90.6389 |
+| Junction_B    |   19 |     92.2909 |
+| Junction_A    |   20 |     89.1591 |
+| Junction_C    |   20 |     90.6833 |
+| Junction_B    |   20 |     89.6364 |
+| Junction_D    |   20 |     89.1304 |
+| Junction_C    |   21 |     35.0000 |
+| Junction_D    |   21 |     37.1429 |
+| Junction_B    |   21 |     35.2787 |
+| Junction_A    |   21 |     37.6600 |
+| Junction_D    |   22 |     35.4483 |
+| Junction_B    |   22 |     35.2414 |
+| Junction_C    |   22 |     34.7843 |
+| Junction_A    |   22 |     36.7833 |
+| Junction_A    |   23 |     35.5738 |
+| Junction_C    |   23 |     36.3400 |
+| Junction_B    |   23 |     31.4035 |
+| Junction_D    |   23 |     30.6250 |
++---------------+------+-------------+
+96 rows in set (0.00 sec)
+
++---------+-------------+
+| weather | avg_traffic |
++---------+-------------+
+| Clear   |     52.6416 |
+| Fog     |     53.0886 |
+| Rain    |     52.7001 |
++---------+-------------+
+3 rows in set (0.00 sec)
+
++---------------+-------------+---------------+
+| location_name | avg_traffic | rank_position |
++---------------+-------------+---------------+
+| Junction_C    |     53.5350 |             1 |
+| Junction_A    |     52.7994 |             2 |
+| Junction_D    |     52.7342 |             3 |
+| Junction_B    |     52.1757 |             4 |
++---------------+-------------+---------------+
+4 rows in set (0.01 sec)
+
++------+----------------+
+| hour | traffic_events |
++------+----------------+
+|    6 |            234 |
+|    0 |            232 |
+|    4 |            232 |
+|   14 |            231 |
+|   22 |            227 |
++------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> exit
